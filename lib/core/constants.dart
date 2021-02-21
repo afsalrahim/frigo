@@ -21,5 +21,5 @@ class COLOR {
 
 class FONT {
   static const main = 'Poppins';
-  static const styled = 'Pacifico';
+  static const handwritten = 'Pacifico';
 }
