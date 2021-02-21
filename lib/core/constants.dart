@@ -16,6 +16,7 @@ class COLOR {
   static const grey = Color(0xFF9098B1);
   static const light = Color(0xFFEBF0FF);
   static const white = Color(0xFFFFFFFF);
+  static const lightwhite = Color(0xFFF8FCFF);
 }
 
 class FONT {
