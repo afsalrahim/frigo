@@ -6,12 +6,12 @@ import 'package:frigo/views/splash_screen.dart';
 class Navigation {
   static Route<dynamic> generateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
-      case (Routes.splashScreen):
+      case (ROUTES.splashScreen):
         {
           return MaterialPageRoute(builder: (_) => SplashScreen());
         }
         break;
-      case (Routes.homeScreen):
+      case (ROUTES.homeScreen):
         {
           return MaterialPageRoute(builder: (_) => HomeScreen());
         }

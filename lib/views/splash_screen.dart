@@ -11,7 +11,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context, Routes.homeScreen);
+      Navigator.pushReplacementNamed(context, ROUTES.homeScreen);
     });
   }
 
@@ -24,7 +24,10 @@ class _SplashScreenState extends State<SplashScreen> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Center(
-            child: Text('Splash Screen !'),
+            child: Text(
+              'Splash Screen !',
+              style: TextStyle(fontFamily: FONT.styled),
+            ),
           )
         ],
       )),
