@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:frigo/core/constants.dart';
 
+import 'components/background.dart';
+
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -10,9 +12,10 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Future.delayed(Duration(seconds: 3), () {
-    //   Navigator.pushReplacementNamed(context, ROUTES.homeScreen);
-    // });
+    print('inside splash');
+    Future.delayed(Duration(seconds: 2), () {
+      Navigator.pushReplacementNamed(context, ROUTES.homeScreen);
+    });
   }
 
   @override
@@ -21,17 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
       child: Scaffold(
         backgroundColor: COLOR.lightwhite,
         body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  COLOR.white,
-                  COLOR.lightwhite,
-                  COLOR.light,
-                  COLOR.blue
-                ]),
-          ),
+          decoration: gradientBackground3,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -46,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     Text(
                       'Frigo',
                       style: TextStyle(
-                        fontFamily: FONT.styled,
+                        fontFamily: FONT.handwritten,
                         fontSize: 50,
                         fontWeight: FontWeight.w400,
                         color: COLOR.dark,

@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 // Navigation Routes
 class ROUTES {
-  static const splashScreen = '/';
+  static const splashScreen = '/splash';
   static const homeScreen = '/home';
+  static const loginScreen = '/';
 }
 
 class COLOR {
@@ -22,4 +23,8 @@ class COLOR {
 class FONT {
   static const main = 'Poppins';
   static const handwritten = 'Pacifico';
+}
+
+class FONTSIZE {
+  static const double h1 = 32;
 }
