@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     print('inside splash');
     Future.delayed(Duration(seconds: 2), () {
-      Navigator.pushReplacementNamed(context, ROUTES.homeScreen);
+      Navigator.pushReplacementNamed(context, ROUTES.loginScreen);
     });
   }
 

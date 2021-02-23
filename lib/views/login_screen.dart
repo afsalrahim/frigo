@@ -28,35 +28,42 @@ class LoginScreen extends StatelessWidget {
                   child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Row(
-                          children: [
-                            Text(
-                              'Hello,',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.normal,
-                                  fontSize: FONTSIZE.h1),
-                            )
-                          ],
+                        Text(
+                          'Hello,',
+                          style: TextStyle(
+                              fontWeight: FontWeight.normal,
+                              fontSize: FONTSIZE.h1),
                         ),
-                        Row(
-                          children: [
-                            Container(
-                              height: 50,
-                              width: screenSize.width * 0.25,
-                              padding: EdgeInsets.all(2),
-                              // color: COLOR.grey,
-                              child: AppContainerFrosted(
-                                child: Text(
-                                  'Login',
-                                  style: TextStyle(
-                                    fontSize: FONTSIZE.h1,
-                                    color: COLOR.dark,
-                                  ),
-                                ),
-                              ),
-                            )
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(0, 50, 0, 10),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: 'Email',
+                              filled: true,
+                              fillColor: Colors.white30,
+                              focusColor: Colors.white54,
+                            ),
+                          ),
                         ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(0, 10, 0, 50),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: 'Password',
+                              filled: true,
+                              fillColor: Colors.white30,
+                              focusColor: Colors.white54,
+                            ),
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            return null;
+                          },
+                          child: AppContainerFrosted(
+                            child: Text('LOGIN'),
+                          ),
+                        )
                       ]),
                 ),
               ),

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 // Navigation Routes
 class ROUTES {
-  static const splashScreen = '/splash';
+  static const splashScreen = '/';
   static const homeScreen = '/home';
-  static const loginScreen = '/';
+  static const loginScreen = '/login';
 }
 
 class COLOR {
